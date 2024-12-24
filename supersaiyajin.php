@@ -8,6 +8,7 @@
 class SuperSaiyajin extends Saiyajin
 {
     public string $clase = "Super saiyajin";
+    public static string $cabello = "Rubio";
     public function Transformación()
     {
         if ($this->getNivelPelea() >= 1500) {
@@ -17,6 +18,10 @@ class SuperSaiyajin extends Saiyajin
         }
 
         return $texto;
+    }
+
+    public static function MostrarColorCabello(){
+        return "Tengo el cabello de color " . self::$cabello;
     }
 
 }

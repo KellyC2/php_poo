@@ -3,10 +3,15 @@ class Saiyajin{
     private string $nombre;
     private int $nivel_pelea;
     public string $clase="Saiyajin";
+    public static string $cabello="Negro";
 
     public function __construct( string $nombre, int $nivel_pelea){
         $this->nombre=$nombre;
         $this->nivel_pelea=$nivel_pelea;
+    }
+
+    public static function MostrarColorCabello(){
+        return "Tengo el cabello de color ".self::$cabello;    
     }
     
 
@@ -16,9 +21,10 @@ class Saiyajin{
     }
 
     public function NivelDePelea(){
-        return $this->nombre." tiene un nivel de pelea de ".
-        $this->nivel_pelea. " y pertenece  la clase ". $this->clase;
+       // return $this->nombre." tiene un nivel de pelea de ".$this->nivel_pelea. " y pertenece  la clase ". $this->clase;
+        return self::$cabello;
     }
+
 
     public function getNombre(){
         return $this->nombre;
