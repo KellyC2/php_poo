@@ -13,3 +13,13 @@ echo "<br><br>";
 
 $gohan = new SuperSaiyajin(nombre: "Gohan", nivel_pelea: 2000);
 echo $gohan->Transformación();
+echo "<br>";
+
+echo $gohan->getNivelPelea();
+echo "<br>";
+
+echo $gohan->setNivelPelea(5000);
+echo "<br>";
+
+echo $gohan->getNivelPelea();
+echo "<br>";
