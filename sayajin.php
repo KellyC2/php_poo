@@ -15,4 +15,10 @@ class Sayajin{
 
 }
 
+$goku=new Sayajin();
+echo $goku->nombre;
+echo $goku->Saludar();
+
+$vegueta = new Sayajin();
+
 ?>
