@@ -1,10 +1,10 @@
 <?php
- require_once "./sayajin.php";
+require_once "./sayajin.php";
 
 
-$goku = new Sayajin(nivel:1000, nombre:"Goku" );
+$goku = new Saiyajin(nivel_pelea:1000, nombre:"Goku" );
 echo $goku->Saludar();
 echo "<br><br>";
 
-$vegueta = new Sayajin("Vegeta", 950);
-echo $vegueta->Saludar("Mi nombre es ");
+$vegeta = new Saiyajin("Vegeta", 950);
+echo $vegeta->Saludar();
