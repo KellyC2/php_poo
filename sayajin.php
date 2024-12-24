@@ -1,12 +1,16 @@
 <?php
 class Saiyajin{
-   public string $clase="Saiyajin";
+    protected string $nombre;
+    private int $nivel_pelea;
+    public string $clase="Saiyajin";
 
-    public function __construct( public string $nombre, public int $nivel_pelea){
+    public function __construct( string $nombre, int $nivel_pelea){
+        $this->nombre=$nombre;
+        $this->nivel_pelea=$nivel_pelea;
     }
     
 
-    public function Saludar(string $texto=" Hola soy "){
+    protected function Saludar(string $texto=" Hola soy "){
         return $texto. $this ->nombre;
 
     }

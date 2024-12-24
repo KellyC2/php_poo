@@ -12,4 +12,4 @@ echo $vegeta->NivelDePelea();
 echo "<br><br>";
 
 $gohan = new SuperSaiyajin(nombre: "Gohan", nivel_pelea: 2000);
-echo $gohan->NivelDePelea();
+echo $gohan->Transformación();
