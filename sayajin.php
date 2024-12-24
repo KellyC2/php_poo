@@ -1,11 +1,11 @@
 <?php
 class Sayajin{
-    public string $nombre;
-    public int $nivel_pelea;
+    public $nombre;
+    public  $nivel_pelea;
 
-    public function __construct(string $nombre, int $nivel_pelea){
+    public function __construct( $nombre, $nivel){
         $this->nombre=$nombre;
-        $this->nivel_pelea=$nivel_pelea;
+        $this->nivel_pelea=$nivel;
     }
     
 

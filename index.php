@@ -2,7 +2,7 @@
  require_once "./sayajin.php";
 
 
-$goku = new Sayajin("Goku", 1000);
+$goku = new Sayajin(nivel:1000, nombre:"Goku" );
 echo $goku->Saludar();
 echo "<br><br>";
 
