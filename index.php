@@ -12,4 +12,4 @@ echo $vegeta->MostrarColorCabello();
 echo "<br><br>";
 
 $gohan = new SuperSaiyajin(nombre: "Gohan", nivel_pelea: 2000);
-echo $gohan->MostrarColorCabello();
+echo $gohan->NuevoMetodo();

@@ -4,6 +4,7 @@ class Saiyajin{
     private int $nivel_pelea;
     public string $clase="Saiyajin";
     public static string $cabello="Negro";
+    const VELOCIDAD="Normal";
 
     public function __construct( string $nombre, int $nivel_pelea){
         $this->nombre=$nombre;

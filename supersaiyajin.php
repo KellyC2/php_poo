@@ -23,5 +23,8 @@ class SuperSaiyajin extends Saiyajin
     public static function MostrarColorCabello(){
         return "Tengo el cabello de color " . self::$cabello;
     }
+    public static function NuevoMetodo(){
+        return parent:: MostrarColorCabello();//Accede a una constante o a un mètodo  estàtico de la clase padre
+    }
 
 }
