@@ -1,5 +1,8 @@
 <?php
 class Saiyajin{
+    //use TecnicasSimples, TecnicasEspeciales;
+    use TecnicasCombinadas;
+
     private string $nombre;
     private int $nivel_pelea;
     public string $clase="Saiyajin";
