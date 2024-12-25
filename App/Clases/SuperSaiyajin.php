@@ -5,6 +5,8 @@
  * private:Acceso solo en la misma clase.
  */
 
+namespace App\Clases;
+
 class SuperSaiyajin extends Saiyajin
 {
     public string $clase = "Super saiyajin";

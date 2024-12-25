@@ -1,7 +1,9 @@
 <?php
+
+namespace App\Otras;
 class Saiyajin{
     //use TecnicasSimples, TecnicasEspeciales;
-    use TecnicasCombinadas;
+    use \App\Traits\TecnicasCombinadas;
 
     private string $nombre;
     private int $nivel_pelea;
@@ -19,7 +21,7 @@ class Saiyajin{
     }
     
 
-    protected function Saludar(string $texto=" Hola soy "){
+    public function Saludar(string $texto=" Hola desde otras soy "){
         return $texto. $this ->nombre;
 
     }

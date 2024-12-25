@@ -1,4 +1,6 @@
 <?php
+
+    namespace App\Traits;
     trait TecnicasSimples{
         public function AumentarVelocidad(){
             return $this->getNombre()." aumento su velocidad ";

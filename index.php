@@ -1,13 +1,23 @@
 <?php
-require_once "./traits/tecnicasSimples.php";
-require_once "./traits/tecnicasEspeciales.php";
-require_once "./traits/tecnicasCombinadas.php";
-require_once "./sayajin.php";
-require_once "./supersaiyajin.php";
+require_once "App/Traits/TecnicasSimples.php";
+require_once "App/Traits/TecnicasEspeciales.php";
+require_once "App/Traits/TecnicasCombinadas.php";
+require_once "App/Clases/Saiyajin.php";
+require_once "App/Clases/SuperSaiyajin.php";
+require_once "App/Otras/Saiyajin.php";
 
 
-$goku = new Saiyajin(nivel_pelea: 1000, nombre: "Goku");
-echo $goku->AumentarVelocidad();
+use App\Clases\Saiyajin;
+use App\Clases\SuperSaiyajin;
+use App\Otras\Saiyajin as OtroSaiyajin;
+
+$goku = new OtroSaiyajin(nivel_pelea: 1000, nombre: "Goku");
+echo $goku->Saludar();
+echo "<br><br>";
+
+$gothen = new Saiyajin("Gothen", 2000);
+echo $gothen->Saludar();
+
 echo "<br><br>";
 
 $vegeta = new Saiyajin("Vegeta", 950);
